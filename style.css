@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #F2EAE2 ;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+
+}
+.container{
+   justify-content: center;
+   display: flex;
+}
+.product{
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    margin: 120px auto;
+    border:none;
+    width: 523px;
+    height: 400px 
+}
+.product img{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius : 10px;
+    width: 240px;
+    height: auto;
+}
+#information{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#header{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    padding-top : 23px;
+    padding-bottom: 23px;
+    letter-spacing: 3px;
+}
+#item-name{
+    line-height: 33px;
+    padding-bottom: 10px;;
+}
+#info{
+    letter-spacing: 0.75px;
+    padding-top : 13px;
+    padding-bottom : 5px;
+    font-size: 14px;
+    line-height: 20px;;
+    color: #555;
+}
+#price{
+    display: flex;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 12px;
+    color: rgb(61,128,105);
+}
+#prev-price{
+    padding-bottom: 10px;
+    margin-top: auto 0;
+    padding-left: 30px;
+    color:  hsl(228, 12%, 48%);
+    font-size: 14px;
+    text-decoration: underline;
+    text-decoration-line: line-through;
+}
+
+a{  
+    display: flex;
+    background: rgb(61,128,105);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 60px ;
+    border-radius: 5px;
+    
+}
+#cart{
+    padding-right: 10px;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    justify-content: start;
+    position: relative; 
+  
+}
+
+@media screen and (max-width: 375px){
+     .product{
+         display: block;
+         height: 640px ;
+         margin: 10px 15px;
+     }
+     .product img{
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 10px;;
+        width: 350px;
+        height: 43%;
+     }    
+     a{
+       
+        padding: 10px 90px;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 535px){
+    a{
+        padding: 10px 50px;
+    }
+    .product{
+        height: 415px;
+    }
+    a{
+        padding-right: 20px;
+        border-radius: 5px;
+    }
+}
